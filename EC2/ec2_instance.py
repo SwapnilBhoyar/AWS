@@ -96,10 +96,10 @@ def terminate_ec2_instance():
     except Exception as e:
         logger.info(e)
 
-
-create_ec2_instance()
-describe_ec2_instance()
-reboot_ec2_instance()
-stop_ec2_instance()
-start_ec2_instance()
-terminate_ec2_instance()
+if __name__=="__main__":
+    create_ec2_instance()
+    describe_ec2_instance()
+    reboot_ec2_instance()
+    stop_ec2_instance()
+    start_ec2_instance()
+    terminate_ec2_instance()
